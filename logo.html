@@ -1727,6 +1727,25 @@ box-shadow: 0 0 5px 1px #9d9c9d;
           color: var(--secondary);
     font-weight: 500;
       }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
     </style>
 <link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3205624993188380148&amp;zx=b7624756-a8b6-435d-9757-a2b9f5fda23a' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3205624993188380148&amp;zx=b7624756-a8b6-435d-9757-a2b9f5fda23a' rel='stylesheet'/></noscript>
 <meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
@@ -1744,17 +1763,25 @@ box-shadow: 0 0 5px 1px #9d9c9d;
 <ul itemscope='' itemtype='http://schema.org/SiteNavigationElement'>
 <i class='fas fa-times '></i>
 <h1>MATCHBOX</h1>
-<li><a href='./index'>Home</a></li>
-<li><a href='https://app.matchboxid.my.id/login'>Login</a></li>
-<li><a href='https://app.matchboxid.my.id'>Register</a></li>
-<li><a href=''>Blogs</a></li>
-<li><a href='./aplikasi'>Jasa Aplikasi</a></li>
-<li><a href='./domain'>Jasa Domain</a></li>
-<li><a href='./vps'>Jasa Vps</a></li>
-<li><a href='./websitehosting'>Jasa Web Hosting</a></li>
-<li><a href='./emailhosting'>Jasa Email Hosting</a></li>
-<li><a href='./logo'>Jasa Logo</a></li>
-<li><a href='./softemail'>Jasa Email Gateaway</a></li>
+<li><a href='#'>Home</a></li>
+<div class="dropdown">
+  <li>&emsp;Layanan</li>
+  <div class="dropdown-content">
+  <p><hr>
+  <p><a href="./aplikasi">Jasa Aplikasi</a></p>
+  <p><hr>
+  <p><a href="./domain">Jasa Domain</a></p>
+  <p><hr>
+  <p><a href="./vps">Jasa VPS</a></p>
+  <p><hr>
+  <p><a href="./emailhosting">Jasa Email Host</a></p>
+  <p><hr>
+  <p><a href="./logo">Jasa Logo</a></p>
+  <p><hr>
+  <p><a href="./softemail">Jasa Softemail</a></p>
+  <p><hr>
+  </div>
+</div>
 <li><a href='https://wa.me/+6285941896616'>Contact</a></li>
 </ul>
 </div></div>
